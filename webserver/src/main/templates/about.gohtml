@@ -1,0 +1,13 @@
+{{template "header" .Title}}
+<link rel="stylesheet" href="/assets/index.css">
+</head>
+<body>
+
+<h1></h1>
+<h3 style= "position: absolute; top: 0; width: 200; text-align: center "> <b>ABOUT US:</b> San José State University (commonly referred to as San Jose State or SJSU) is a comprehensive public university located in San Jose, California, United States. It is the founding school of the 23-campus California State University (CSU) system, and holds the distinction of being the oldest public institution of higher education on the West Coast of the United States.</h3>
+
+{{range .Members}}
+{{.}}<br>
+{{end}}
+
+{{template "footer"}}
